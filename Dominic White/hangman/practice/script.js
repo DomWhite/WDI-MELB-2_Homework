@@ -32,15 +32,15 @@ function turnToBlank(secretLetters) {
 // }
 
 
-// window.onload = function() {
-//   var input = document.getElementById("letterField");
-//   input.addEventListener("keyup", function() {
-//   var letter = document.getElementById("letterField").value;
-//   	guessedLetters.push(letter); 
-//   	debugger;
-//       console.log(guessedLetters);
-//     });
-//   }
+window.onload = function() {
+  var input = document.getElementById("letterField");		
+  input.addEventListener("keyup", function() {
+  var letter = document.getElementById("letterField").value;
+  	guessedLetters.push(letter); 
+    console.log(guessedLetters);
+    input.value = '';
+    });
+  }
 
   function takeLetter() {
   		input = document.getElementById("letterField").value;
@@ -48,9 +48,9 @@ function turnToBlank(secretLetters) {
   		guessedLetters.push(input);
   }
 
-window.onload = function() {
-  var submitBtn = document.getElementById("submitButton");
-  submitBtn.addEventListener("click", takeLetter);
-}
+// window.onload = function() {
+//   var submitBtn = document.getElementById("submitButton");
+//   submitBtn.addEventListener("click", takeLetter);
+// }
 
 

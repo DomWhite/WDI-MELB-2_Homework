@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hangman</title>
+    <link href='http://fonts.googleapis.com/css?family=Denk+One|Butcherman|Akronim' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="stylesheets/reset.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+  </head>
+  <body>
+    <div id="main_header">
+      <p id="header_para">HangMAN</p>
+    </div>
+      <div class="whole_container">
+       <div class="left_container">
+        <div class="gamePlayArea col">
+          <div id="hangmanArea">
+            Guesses Left: <span id="guessesLeft"></span>
+          </div>
+          <div id="letterArea">
+            <div id="guessBox">
+              Guess a Letter:
+              <input id="letterField" type="text" />
+            </div>
+            <div id="lettersUsed">
+              Letters Guessed Already:
+              <div id="guessedLetters"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div id="gameControlArea">
+          <div id="wordString"></div>
+          <input id="giveUpButton" class="button" type="submit" value="Give up"/>
+          <input id="resetButton" class="button" type="submit" value="Reset Game"/>
+          <div id="display">
+            <p id="winOrLose">Just Hanging Around...</p>
+          </div>
+          <a href="http://enpieza.com/">
+          <img class="feat_img" src="images/colgao_lamp.jpg" alt="">
+          </a>
+        </div>
+      </div>
+
+
+     <canvas id="hangGame" width="490" height="479">Hang Man drawing</canvas>
+
+
+      </div>
+
+
+    <div id="main_footer">
+      <p id="footer_para">Dominic White 2015 &trade;</p>
+    </div>
+
+    <script type='text/javascript' src='javascript/underscore.js'></script>
+    <script type='text/javascript' src='javascript/app.js'></script>
+  </body>
+</html>

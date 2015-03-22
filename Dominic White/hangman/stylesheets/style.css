@@ -1,0 +1,255 @@
+* {box-sizing:border-box}
+
+
+html {
+bottom: 0;
+height: auto;
+background-image: url("../images/morbid_forrest.jpg");
+background-repeat:no-repeat;
+-webkit-background-size:cover;
+-moz-background-size:cover;
+-o-background-size:cover;
+background-size:cover;
+background-position:center;
+color: white;
+}
+/*
+LAYOUT ELEMENT COLOURS ***************************/
+/*#main_header {background-color: red}*/
+.gamePlayArea {background-color: rgba(0,0,0,0.5)}
+#hangGame {background-color: rgba(0,0,0,0.5)}
+#gameControlArea {background-color: rgba(0,0,0,0.5)}
+#main_footer {background-color: rgba(0,0,0,0.1)}
+
+/*
+HEADER AND FOOTER ***********************************/
+
+#main_header {
+	padding: 10px;
+	text-align: center;
+	font-family: 'Butcherman', cursive;
+	font-size: 50px;
+	margin: 20px;
+	width: 100%;
+}
+
+#main_footer {
+	padding: 5px 0 5px 5px;
+	vertical-align: baseline;
+	height: 20px;
+	font-family: 'Butcherman', cursive;
+}
+
+/*
+COLUMN LAYOUT ***********************************/
+.col {
+	padding: 30px;
+	font-family: 'Denk One', sans-serif;
+}
+#hangGame {
+	display: none;
+}
+
+/*
+GAME CONTROL AREA ***********************************/
+#letterField {
+	font-family: 'Denk One', sans-serif;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	width: 20px;
+	font-size: 20px;
+}
+
+#gameControlArea {
+	text-align: center;
+	font-family: 'Denk One', sans-serif;
+}
+
+/*
+IMAGE LAYOUT ***********************************/
+.feat_img {
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 5px;
+}
+
+
+/*
+MEDIA QUERIES ***********************************/
+
+@media (min-width: 769px) {
+	html {
+		height: 100%;
+	}
+
+	.col {
+
+	}
+
+	.whole_container {
+		width: 100%;
+		min-height: 100%;
+	}
+
+	.left_container {
+		display: inline-block;
+		width: 50%;
+		height: 100%;
+	}
+	.gamePlayArea {
+		/*display: inline-block;*/
+		width: 100%;
+		height: 200px;
+		line-height: 2.5;
+		margin-bottom: 2.0em;
+
+	}
+
+	#gameControlArea {
+		/*display: inline-block;*/
+		width: 100%;
+		height: 100%;
+		padding: 10px;
+		font-size: 28px;
+	}
+
+	#wordString {
+		margin-bottom: 10px;
+	}
+
+	#winOrLose {
+		margin-top: 10px;
+	}
+
+	#hangGame {
+		max-width: 40%;
+		display: inline-block;
+		max-height: 100%;
+		vertical-align: top;
+		margin-left: 50px;
+	}
+
+	.feat_img {
+		display: none;
+	}
+	
+	#main_header {
+		font-size: 100px;
+		padding: 20px;
+		margin: 20px 20px 20px 20px;
+	}
+
+	#main_footer {
+/*		position:absolute;*/
+   		bottom:0;
+   		width:100%;
+   		height:20px; 
+   		background-color: rgba(0,0,0,0.5)
+		}
+
+	/*
+	BUTTON STYLING ********************************/
+
+	#giveUpButton {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f0f0f0), color-stop(1, #ffffff) );
+	background:-moz-linear-gradient( center top, #f0f0f0 5%, #ffffff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0f0f0', endColorstr='#ffffff');
+	background-color:#f0f0f0;
+	-webkit-border-top-left-radius:37px;
+	-moz-border-radius-topleft:37px;
+	border-top-left-radius:37px;
+	-webkit-border-top-right-radius:0px;
+	-moz-border-radius-topright:0px;
+	border-top-right-radius:0px;
+	-webkit-border-bottom-right-radius:0px;
+	-moz-border-radius-bottomright:0px;
+	border-bottom-right-radius:0px;
+	-webkit-border-bottom-left-radius:37px;
+	-moz-border-radius-bottomleft:37px;
+	border-bottom-left-radius:37px;
+	text-indent:0;
+	border:2px solid #189e00;
+	display:inline-block;
+	color:#459603;
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	font-style:normal;
+	height:22px;
+	line-height:16px;
+	width:99px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px -2px 5px #aade7c;
+	}
+#giveUpButton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #b3b5b1), color-stop(1, #f0f0f0) );
+	background:-moz-linear-gradient( center top, #b3b5b1 5%, #f0f0f0 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#b3b5b1', endColorstr='#f0f0f0');
+	background-color:#b3b5b1;
+	}
+#giveUpButton:active {
+	position:relative;
+	top:1px;
+	}
+
+#resetButton {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f0f0f0), color-stop(1, #ffffff) );
+	background:-moz-linear-gradient( center top, #f0f0f0 5%, #ffffff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0f0f0', endColorstr='#ffffff');
+	background-color:#f0f0f0;
+	-webkit-border-top-left-radius:0px;
+	-moz-border-radius-topleft:0px;
+	border-top-left-radius:0px;
+	-webkit-border-top-right-radius:37px;
+	-moz-border-radius-topright:37px;
+	border-top-right-radius:37px;
+	-webkit-border-bottom-right-radius:37px;
+	-moz-border-radius-bottomright:37px;
+	border-bottom-right-radius:37px;
+	-webkit-border-bottom-left-radius:0px;
+	-moz-border-radius-bottomleft:0px;
+	border-bottom-left-radius:0px;
+	text-indent:0;
+	border:2px solid #189e00;
+	display:inline-block;
+	color:#459603;
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	font-style:normal;
+	height:22px;
+	line-height:16px;
+	width:99px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px -2px 5px #aade7c;
+	}
+#resetButton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #b3b5b1), color-stop(1, #f0f0f0) );
+	background:-moz-linear-gradient( center top, #b3b5b1 5%, #f0f0f0 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#b3b5b1', endColorstr='#f0f0f0');
+	background-color:#b3b5b1;
+	}
+#resetButton:active {
+	position:relative;
+	top:1px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
