@@ -1,53 +1,50 @@
 <!DOCTYPE html>
 <html>
-<title>PTV Journey Planner</title>
+	<title>PTV Journey Planner</title>
 	<head>
-	<link href='http://fonts.googleapis.com/css?family=Questrial|Josefin+Sans|Crete+Round|Vollkorn' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="style.css">
+		<link href='http://fonts.googleapis.com/css?family=Questrial|Josefin+Sans|Crete+Round|Vollkorn' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	
 	<body>
-
 		<div id="whole_page">
 			<h1>PT<span style="color: red">></span> Planner</h1>
 			<div class="para_div">
 				<table>
-				  <tr>
-				    <th>Train Line</th>
-				    <th class="station_title">Train Stations</th> 
-				  </tr>
-				  <tr>
-				    <td>Alamein</td>
-				    <td class="stations">Flinders - <span style="color: #c1ed9c">Richmond</span> - East Richmond - Burnley - Hawthorn - Glenferrie</td> 
-				  </tr>
-				  <tr>
-				    <td>Glen Waverly</td>
-				    <td class="stations">Flagstaff - Melbourne Central - Parliament - <span style="color: #c1ed9c">Richmond</span> - Kooyong - Tooronga</td> 
-				  </tr>
-				  <tr>
-				    <td>Sandringham</td>
-				    <td class="stations">Southern Cross - <span style="color: #c1ed9c">Richmond</span> - South Yarra - Prahran - Windsor</td> 
-				  </tr>
-				</table>	
-			
+					<tr>
+						<th>Train Line</th>
+						<th class="station_title">Train Stations</th>
+					</tr>
+					<tr>
+						<td>Alamein</td>
+						<td class="stations">Flinders - <span style="color: #c1ed9c">Richmond</span> - East Richmond - Burnley - Hawthorn - Glenferrie</td>
+					</tr>
+					<tr>
+						<td>Glen Waverly</td>
+						<td class="stations">Flagstaff - Melbourne Central - Parliament - <span style="color: #c1ed9c">Richmond</span> - Kooyong - Tooronga</td>
+					</tr>
+					<tr>
+						<td>Sandringham</td>
+						<td class="stations">Southern Cross - <span style="color: #c1ed9c">Richmond</span> - South Yarra - Prahran - Windsor</td>
+					</tr>
+				</table>
+				
 				<p>Please select the train line and station you would like to start at</p>
 				<select id="startLine" onchange="displayStations('startLine', 'startStation');">
 				</select>
 				<select id="startStation">
 				</select>
-
 				<p>Please select the train line and station you would like to finish at?</p>
 				<select id="stopLine" onchange="displayStations('stopLine', 'stopStation');">
 				</select>
 				<select id="stopStation">
 				</select>
-
 				<div id="button">
 					<button id="btnGo">Let's Go!</button>
 				</div>
-			</div>	
+			</div>
 			<div id="output">
-				<p id="display">PT<span style="color: red">></span> Planner</p> 
+				<p id="display">PT<span style="color: red">></span> Planner</p>
 			</div>
 		</div>
 	</body>
